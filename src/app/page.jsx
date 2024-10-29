@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import MegaScroll from "react-mega-scroll";
-import LandingPage from "./sections/LandingPage.jsx";
+import LandingPage from "./sections/LandingPage/index.jsx";
 import SubHeadingSection from "./sections/SubHeadingSection";
 import SectionWraper from "./sections/SectionWraper";
 
