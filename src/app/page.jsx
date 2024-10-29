@@ -1,6 +1,9 @@
 "use client";
 import React, { useState } from "react";
 import MegaScroll from "react-mega-scroll";
+import LandingPage from "./sections/LandingPage.jsx";
+import SubHeadingSection from "./sections/SubHeadingSection";
+import SectionWraper from "./sections/SectionWraper";
 
 const styles = {
   display: "flex",
@@ -17,9 +20,14 @@ function App() {
 
   return (
     <MegaScroll onChange={setActive}>
-      <div style={{ ...styles, background: "#111" }}>react-mega-scroll</div>
-      <div style={{ ...styles, background: "#222" }}>Smooth Scrolling</div>
-      <div style={{ ...styles, background: "#333" }}>Keyboard Support</div>
+      <div className="relative">
+        <LandingPage />
+      </div>
+
+      <SubHeadingSection />
+      <div style={{ ...styles, background: "#333" }}>
+        <SectionWraper />
+      </div>
       <div style={{ ...styles, background: "#222" }}>State Listeners</div>
       <div style={{ ...styles, background: "#111" }}>Free Forever</div>
     </MegaScroll>
