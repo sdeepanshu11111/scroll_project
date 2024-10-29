@@ -28,8 +28,12 @@ function App() {
       <div style={{ ...styles, background: "#333" }}>
         <SectionWraper />
       </div>
-      <div style={{ ...styles, background: "#222" }}>State Listeners</div>
-      <div style={{ ...styles, background: "#111" }}>Free Forever</div>
+      <div style={{ ...styles, background: "#333" }}>
+        <SectionWraper />
+      </div>
+      <div style={{ ...styles, background: "#333" }}>
+        <SectionWraper />
+      </div>
     </MegaScroll>
   );
 }
