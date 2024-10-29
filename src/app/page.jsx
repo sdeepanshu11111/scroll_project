@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import MegaScroll from "react-mega-scroll";
-import LandingPage from "./sections/LandingPage/index.jsx";
+import LandingPageCustom from "./sections/LandingPage";
 import SubHeadingSection from "./sections/SubHeadingSection";
 import SectionWraper from "./sections/SectionWraper";
 
@@ -21,7 +21,7 @@ function App() {
   return (
     <MegaScroll onChange={setActive}>
       <div className="relative">
-        <LandingPage />
+        <LandingPageCustom />
       </div>
 
       <SubHeadingSection />
